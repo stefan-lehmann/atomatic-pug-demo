@@ -1,0 +1,83 @@
+{
+  "title": "Footer Nav",
+  "locals": {
+    "footerNav": {
+      "items": [
+        {
+          "name": "unser Material",
+          "items": [
+            {
+              "name": "beschichtet"
+            },
+            {
+              "name": "unbeschichtet"
+            },
+            {
+              "name": "Linoleum"
+            },
+            {
+              "name": "Massivholz"
+            }
+          ]
+        },
+        {
+          "name": "unsere Möbel",
+          "items": [
+            {
+              "name": "Tische"
+            },
+            {
+              "name": "Regale"
+            },
+            {
+              "name": "Schränke"
+            },
+            {
+              "name": "Betten"
+            },
+            {
+              "name": "Einbaumöbel"
+            }
+          ]
+        },
+        {
+          "name": "unsere Details",
+          "items": [
+            {
+              "name": "Verbindungen"
+            },
+            {
+              "name": "Scharniere"
+            },
+            {
+              "name": "Kanten"
+            },
+            {
+              "name": "Radien"
+            }
+          ]
+        },
+        {
+          "name": "über uns",
+          "items": [
+            {
+              "name": "Philosophie"
+            },
+            {
+              "name": "Team"
+            },
+            {
+              "name": "Designer"
+            },
+            {
+              "name": "Kunden"
+            },
+            {
+              "name": "Kontakt"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

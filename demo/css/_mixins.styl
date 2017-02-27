@@ -1,0 +1,118 @@
+//absolute(_top = null, _right = null, _bottom = null, _left = null, _content = null )
+//  position absolute
+//  top     _top      if _top is not null
+//  right   _right    if _right is not null
+//  bottom  _bottom   if _bottom is not null
+//  left    _left     if _left is not null
+//  content _content  if _content is not null
+//
+//tintSvg(_color)
+//  fill _color
+//  *[fill^="#"]
+//    fill _color
+//  *[stroke^="#"]
+//    stroke _color
+//
+//responsiveImage(_ratio = 100%)
+//  position relative
+//  overflow hidden
+//
+//  img
+//    display block
+//    position absolute
+//    top 50%
+//    left 50%
+//    min-height 100%s
+//    min-width 100%
+//    transform translate(-50%, -50%)
+//
+//lazyBox()
+//  box-shadow inset 0 0 3px $hexSilver
+//  background-image url('/static/images/loader.svg')
+//  background-repeat no-repeat
+//  background-position center
+//  background-size 50px
+//  background-color $colorBackgroundDefault
+//
+//centerContent(page-type='default')
+//
+//  if page-type == 'framed-content'
+//    padding-left 1em
+//    padding-right @padding-left
+//
+//    @media $mediaMinTabletStart
+//    padding-left 2em
+//    padding-right @padding-left
+//
+//    @media $mediaMinTabletMid
+//             padding-left 4em
+//             padding-right @padding-left
+//
+//    @media $mediaMinLaptopStart
+//             padding-left 8em
+//             padding-right (@padding-left - 1em)
+//
+//  else
+//
+//    max-width $layoutMaxWidth
+//    margin-left $paddingNormal
+//    margin-right @margin-left
+//
+//    @media $mediaMinPhoneMid
+//             margin-left $paddingLarge
+//             margin-right @margin-left
+//
+//    @media $mediaMinLayoutOffsetStart
+//             margin-left auto
+//             margin-right @margin-left
+//             min-width $widthLaptopStart
+//             width 78%
+//
+//truncate()
+//  white-space nowrap
+//  overflow hidden
+//  text-overflow ellipsis
+//
+//hyphenation()
+//  word-break break-all
+//  hyphens auto
+//
+//clearfix()
+//  &:after
+//    content ''
+//    display table
+//    clear both
+//
+//placeholder($color = inherit)
+//  color $color
+//  vertical-align baseline!important
+//  display inline-block!important
+//  transition color $timingNormal, opacity $timingNormal
+//  font-weight 300
+//  opacity .75!important
+//
+//getFont($family, $size = 1em, $weight = 400, $trans = none)
+//  font-family $family
+//  font-size $size
+//  font-weight $weight
+//  text-transform $trans
+//
+//fontPrimary($size = 1em, $weight = 400, $trans = none)
+//  getFont($fontPrimary, $size, $weight, $trans)
+//
+//fontPrimaryBold($size = 1em, $trans = none)
+//  fontPrimary($size, 700, $trans)
+//  letter-spacing .02em
+//
+//fontSecondary($size = 1em, $weight = 400, $trans = none)
+//  getFont($fontSecondary, $size, $weight, $trans)
+//  overflow visible
+//
+//mediaMin(_min)
+//  '(min-width ' + _min + ')'
+//
+//mediaMax(_max)
+//  '(max-width ' + _max + ')'
+//
+//mediaMinMax(_min, _max)
+//  '(min-width ' + _min + ') and (max-width ' + _max + ')'

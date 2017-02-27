@@ -1,0 +1,7 @@
+{
+  "title": "GLOBAL 00",
+  "locals": {
+    "test": "colors",
+    "global": "include "
+  }
+}

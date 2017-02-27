@@ -1,0 +1,21 @@
+{
+  "title": "Primary Nav",
+  "locals": {
+    "primaryNav": {
+      "items": [
+        {
+          "name": "Zuschnitte"
+        },
+        {
+          "name": "Möbel"
+        },
+        {
+          "name": "Preise"
+        },
+        {
+          "name": "Fragen?"
+        }
+      ]
+    }
+  }
+}

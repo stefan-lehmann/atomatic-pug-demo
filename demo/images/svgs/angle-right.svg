@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="25px" viewBox="0 0 14 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-992.000000, -2324.000000)" fill="#5F6258">
+            <g transform="translate(586.000000, 2307.000000)">
+                <g transform="translate(411.500000, 30.000000) rotate(-180.000000) translate(-411.500000, -30.000000) translate(381.000000, 0.000000)">
+                    <path d="M24.9359726,42.1545706 C24.2642083,42.8266611 23.1750576,42.8266611 22.5036194,42.1545706 C21.8321269,41.4830781 21.8321269,40.3939817 22.5036194,39.7225435 L31.847878,30.3785568 L22.5038912,21.0348961 C21.8323986,20.3631318 21.8323986,19.2741442 22.5038912,18.6026516 C23.1753837,17.9308873 24.2644801,17.9308873 24.9362444,18.6026516 L35.4965708,29.162815 C35.8323171,29.4987243 36,29.9385047 36,30.3785024 C36,30.8187176 35.831991,31.258824 35.4962991,31.5945703 L24.9359726,42.1545706 Z" id="Arrow-Copy" transform="translate(29.000000, 30.378733) rotate(-180.000000) translate(-29.000000, -30.378733) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

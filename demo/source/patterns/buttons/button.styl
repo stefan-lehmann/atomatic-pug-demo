@@ -1,0 +1,108 @@
+
+.button__test
+  color blue
+
+  &&--bbbbbbb
+    background red
+
+.button
+  fontSecondary(1em, 600, uppercase)
+  letter-spacing .125em
+  display inline-flex
+  flex-flow row nowrap
+  justify-content center
+  background none
+  border $border-button
+  border-radius $border-radius-button
+  line-height 1.25em
+  padding .5em 1.5em
+  text-align center
+  position relative
+  &
+  &:hover
+  &:focus
+    color $color-text-default
+
+  .svg
+    height 1.125em
+    width 1.125em
+
+  &&--full-width
+    /*JSON5  {
+    title: "Full Width",
+    description: "hsckhaksc ascahc"
+    }
+    */
+    width 100%
+    &:before
+    &:after
+      content ''
+      display block
+      flex-grow 1
+      height .5em
+    &:before
+      order -1
+    &:after
+      order 1
+
+  &&--full-width
+    padding-left 1.125em
+    justify-content space-between
+    .svg
+      margin-right .75em
+      margin-left -.5em
+      order -2
+
+  &&--icon-after
+    padding-right 1.125em
+    justify-content space-between
+    .svg
+      margin-left .75em
+      margin-right -.5em
+      order 2
+
+  &&--inverted
+    border-color $color-text-invert
+    &
+    &:hover
+    &:focus
+      color $color-text-invert
+      .svg
+        tintSvg($color-text-invert)
+
+  &&--filled
+  &&--active
+    background-color $color-background-invert
+    border-color $color-background-invert
+    &
+    &:hover
+    &:focus
+      color $color-text-invert
+      .svg
+        tintSvg($color-primary)
+
+  &&--inactive
+    pointer-events none
+    cursor default
+    border-color $color-text-inactive
+    filter grayscale(100%) brightness(5) brightness(80%)
+
+  &&--primary
+    background-color $color-primary
+    border-color @background-color
+    color $color-text
+
+  &&--primary-inverted
+    background-color $color-background-invert
+    color $color-primary
+    border-color $color-primary
+
+  &&--large
+    font-size 1.125em
+    height auto
+
+  &&--small
+    font-size .75em
+
+  &&--normalized
+    font-size 1rem

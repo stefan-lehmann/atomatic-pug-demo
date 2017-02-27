@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="16px" viewBox="0 0 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Full-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="D-JM-Homepage-" sketch:type="MSArtboardGroup" transform="translate(-1269.000000, -5755.000000)" fill="#969595">
+            <g id="Footer" sketch:type="MSLayerGroup" transform="translate(241.000000, 5520.000000)">
+                <g id="Social" transform="translate(1028.000000, 235.000000)" sketch:type="MSShapeGroup">
+                    <path d="M7.56284153,2.82978723 C7.12568306,2.70212766 6.62295082,2.61702128 6.16393443,2.61702128 C5.59562842,2.61702128 4.3715847,2.9787234 4.3715847,3.68085106 L4.3715847,5.36170213 L7.27868852,5.36170213 L7.27868852,8.19148936 L4.3715847,8.19148936 L4.3715847,16 L1.44262295,16 L1.44262295,8.19148936 L0,8.19148936 L0,5.36170213 L1.44262295,5.36170213 L1.44262295,3.93617021 C1.44262295,1.78723404 2.44808743,0 4.87431694,0 C5.70491803,0 7.19125683,0.0425531915 8,0.319148936 L7.56284153,2.82978723 Z" id="Facebook"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,5 @@
+{
+  "atoms-index": "demo/templates/00-atoms/00-global/index.twig",
+  "atoms-colors": "demo/templates/00-atoms/01-colors/colors.twig",
+  "demo/templates/index.twig": "demo/templates/index.twig"
+}

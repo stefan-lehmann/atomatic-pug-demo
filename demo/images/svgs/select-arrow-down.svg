@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="11px" viewBox="0 0 16 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BD-JM-Language-Country-Selection" transform="translate(-1039.000000, -275.000000)" fill="#53585E">
+            <g id="Modal" transform="translate(721.000000, 180.000000)">
+                <g id="Group-7" transform="translate(36.000000, 32.000000)">
+                    <g id="Input-field">
+                        <g id="Country" transform="translate(1.000000, 0.000000)">
+                            <path d="M284.567913,75.9907009 C284.254281,75.9907009 284,75.6468187 284,75.2226721 L284,61.7822755 C284,61.3581288 284.254281,61.0142827 284.567913,61.0142827 L293.796413,67.9264341 C293.796413,67.9264341 294.222348,68.5024557 293.796413,69.0785134 C293.370479,69.654499 284.567913,75.9907009 284.567913,75.9907009 L284.567913,75.9907009 Z" id="Shape" transform="translate(288.992859, 68.502492) rotate(-270.000000) translate(-288.992859, -68.502492) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
