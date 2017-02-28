@@ -1,21 +1,30 @@
 {
   "title": "Primary Nav",
-  "locals": {
+
+  "schema": {
     "primaryNav": {
-      "items": [
-        {
-          "name": "Zuschnitte"
-        },
-        {
-          "name": "Möbel"
-        },
-        {
-          "name": "Preise"
-        },
-        {
-          "name": "Fragen?"
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "properties": {
+        "items": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            }
+          }
         }
-      ]
+      }
     }
   }
 }

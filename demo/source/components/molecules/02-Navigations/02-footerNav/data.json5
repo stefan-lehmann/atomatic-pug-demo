@@ -1,83 +1,48 @@
 {
   "title": "Footer Nav",
-  "locals": {
+  "schema": {
     "footerNav": {
-      "items": [
-        {
-          "name": "unser Material",
-          "items": [
-            {
-              "name": "beschichtet"
-            },
-            {
-              "name": "unbeschichtet"
-            },
-            {
-              "name": "Linoleum"
-            },
-            {
-              "name": "Massivholz"
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "properties": {
+        "items": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": [
+              "name","items"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "items": {
+                "type": "array",
+                "minItems": 4,
+                "maxItems": 7,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "object",
+                      "faker":  {
+                        "include": "include molecules-navigations-primarynav.primaryNav.items[0].name"
+                      }
+                    }
+                  }
+                }
+              }
             }
-          ]
-        },
-        {
-          "name": "unsere Möbel",
-          "items": [
-            {
-              "name": "Tische"
-            },
-            {
-              "name": "Regale"
-            },
-            {
-              "name": "Schränke"
-            },
-            {
-              "name": "Betten"
-            },
-            {
-              "name": "Einbaumöbel"
-            }
-          ]
-        },
-        {
-          "name": "unsere Details",
-          "items": [
-            {
-              "name": "Verbindungen"
-            },
-            {
-              "name": "Scharniere"
-            },
-            {
-              "name": "Kanten"
-            },
-            {
-              "name": "Radien"
-            }
-          ]
-        },
-        {
-          "name": "über uns",
-          "items": [
-            {
-              "name": "Philosophie"
-            },
-            {
-              "name": "Team"
-            },
-            {
-              "name": "Designer"
-            },
-            {
-              "name": "Kunden"
-            },
-            {
-              "name": "Kontakt"
-            }
-          ]
+          }
         }
-      ]
+      }
     }
   }
 }
