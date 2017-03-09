@@ -33,7 +33,7 @@
                     "name": {
                       "type": "object",
                       "faker":  {
-                        "include": "include molecules-navigations-primarynav.primaryNav.items[0].name"
+                        "include": "molecules-navigations-primarynav.primaryNav.items[0].name"
                       }
                     }
                   }

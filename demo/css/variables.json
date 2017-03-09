@@ -199,6 +199,14 @@
     "tablet": "(min-width: $width-tablet-start) and (min-width: $width-tablet-end)",
     "laptop": "(min-width: $width-laptop-start) and (min-width: $width-laptop-end)",
     "desktop": "(min-width: $width-desktop-start) and (min-width: $layout-offset-start)",
-    "tv": "$media-min-tv-start"
+    "tv": "$media-min-tv-start",
+    "not": {
+      "phone": "$media-min-tablet-start",
+      "tablet": "(max-width: $width-phone-end) , (min-width: $width-laptop-start)",
+      "laptop": "(max-width: $width-tablet-end) , (min-width: $width-desktop-start)",
+      "desktop": "(max-width: $width-laptop-end) , (min-width: $width-tv-start)",
+      "tv": "$media-max-desktop-end"
+    }
+
   }
 }

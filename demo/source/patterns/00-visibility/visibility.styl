@@ -1,0 +1,60 @@
+hidden()
+  display none
+  position fixed
+  left -1000em
+  top -1000em
+  z-index -1000
+
+.visually-hidden
+  hidden()
+
+.hide
+  @media $media-phone
+    &&--phone
+      hidden()
+
+  @media $media-tablet
+    &&--tablet
+      hidden()
+
+  @media $media-laptop
+    &&--laptop
+      hidden()
+
+  &&--desktop
+    @media $media-desktop
+      hidden()
+
+  @media $media-tv
+    &&--tv
+      hidden()
+
+  &&--touch
+    .html--touch &
+      hidden()
+
+.show
+  @media $media-not-phone
+    &&--phone
+      hidden()
+
+  @media $media-not-tablet
+    &&--tablet
+      hidden()
+
+
+  @media $media-not-laptop
+    &&--laptop
+      hidden()
+
+  @media $media-not-desktop
+    &&--desktop
+      hidden()
+
+  @media $media-not-tv
+    &&--tv
+      hidden()
+
+  &&--touch
+    html:not(.html--touch) &
+      hidden()

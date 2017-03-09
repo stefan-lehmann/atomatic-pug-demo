@@ -2,6 +2,12 @@
   "title": "Primary Nav",
 
   "schema": {
+    "image": {
+      "type": "string",
+      "faker": {
+        "imageUrl": [111, 222]
+      }
+    },
     "primaryNav": {
       "type": "object",
       "required": [
