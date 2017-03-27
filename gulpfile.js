@@ -131,8 +131,8 @@ require('./tasks/styleguide')('styleguide', {
   server: {
     open: false,
     https: {
-      key: `${__dirname}/../atomatic/ssl/localhost.key`,
-      cert: `${__dirname}/../atomatic/ssl/localhost.cert`
+      key: path.resolve('../atomatic/ssl/localhost.key'),
+      cert: path.resolve('../atomatic/ssl/localhost.cert')
     }
   }
 });
@@ -150,12 +150,6 @@ gulp.task('build', gulp.series('clean', gulp.parallel('scripts', 'stylus', 'font
 gulp.task('default', gulp.series('build'));
 gulp.task('watch', gulp.parallel('stylus:watch', 'scripts:watch', 'fonts:watch', 'svg:watch'));
 gulp.task('dev', gulp.series('build', 'styleguide:dev', 'watch'));
-
-/*gulp.task('build', gulp.series('clean', gulp.parallel('copy', 'scripts', 'images', 'stylus')));
- gulp.task('default', gulp.series('build'));
- gulp.task('watch', gulp.parallel('sass:watch', 'scripts:watch', 'images:watch', 'copy:watch'));
- gulp.task('dev', gulp.series('build', 'server', 'watch'));*/
-
 
 gulp.task('deploy', gulp.series('build', 'gzip', 's3deploy'));
 
