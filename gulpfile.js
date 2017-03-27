@@ -1,6 +1,5 @@
-'use strict';
 
-var
+const
   gulp = require('gulp'),
   dotenv = require('dotenv'),
   argv = require('yargs').argv;
@@ -16,20 +15,20 @@ require('./tasks/clean')('clean', {
 });
 
 require('./tasks/copy')('copy', {
-  source: 'demo/copy/**/*',
+  source: 'source/copy/**/*',
   dest: 'public/',
   watch: process.argv[2] === 'dev'
 });
 
 require('./tasks/fonts')('fonts', {
-  source: ['demo/fonts/**/*.woff'],
+  source: ['source/fonts/**/*.woff'],
   dest: 'public/css',
   targetFile: 'fonts.css',
   watch: process.argv[2] === 'dev'
 });
 
 require('./tasks/image')('images', {
-    source: ['demo/images/**/*.{png,jpg,jpeg,gif}', 'demo/templates/**/*.{png,jpg,jpeg,gif}'],
+    source: ['source/images/**/*.{png,jpg,jpeg,gif}', 'source/templates/**/*.{png,jpg,jpeg,gif}'],
     dest: 'public/images',
     svgoPlugins: [
       {collapseGroups: false},
@@ -51,8 +50,8 @@ require('./tasks/image')('images', {
 );
 
 require('./tasks/image')('svg', {
-  source: 'demo/images/**/*.svg',
-  dest: 'demo/source/icons',
+  source: 'source/images/**/*.svg',
+  dest: 'source/styleguide/icons',
   svgoPlugins: [
     {removeDimensions: true},
     {removeStyleElement: true},
@@ -81,8 +80,8 @@ require('./tasks/image')('svg', {
 });
 
 /*require('./tasks/sass')('sass', {
- base: 'demo/css/',
- source: 'demo/css/!**!/!*.{sass,scss}',
+ base: 'source/css/',
+ source: 'source/css/!**!/!*.{sass,scss}',
  dest: 'public/css',
  sourcemaps: argv.minify || false,
  minify: argv.minify || false,
@@ -91,9 +90,9 @@ require('./tasks/image')('svg', {
  });*/
 
 require('./tasks/stylus')('stylus', {
-  base: 'demo/css/',
-  source: ['demo/css/**/reset.styl', 'demo/css/**/*.styl', 'demo/source/**/*.styl', '!demo/**/_*.styl'],
-  watchSource: ['demo/**/*.{styl,json}'],
+  base: 'source/css/',
+  source: ['source/css/**/reset.styl', 'source/css/**/*.styl', 'source/styleguide/**/*.styl', '!source/**/_*.styl'],
+  watchSource: ['source/**/*.{styl,json}'],
   dest: 'public/css',
   targetFile: 'master.css',
   sourcemaps: argv.minify || false,
@@ -103,9 +102,9 @@ require('./tasks/stylus')('stylus', {
     cache: false,
     use: [require('nib')()],
     import: [
-      // __dirname + '/demo/css/_styles',
-      __dirname + '/demo/css/_variables',
-      __dirname + '/demo/css/_mixins'
+      // __dirname + '/source/css/_styles',
+      __dirname + '/source/css/_variables',
+      __dirname + '/source/css/_mixins'
     ]
   },
   prefixOptions: {browsers: ['> 1%', 'last 1 versions'], cascade: false},
@@ -113,8 +112,8 @@ require('./tasks/stylus')('stylus', {
 });
 
 require('./tasks/script')('scripts', {
-  source: 'demo/js/**/*.js',
-  entries: 'demo/js/*.js',
+  source: 'source/js/**/*.js',
+  entries: 'source/js/*.js',
   dest: 'public/js',
   jshint: {
     reporter: 'jshint-stylish',
@@ -129,13 +128,6 @@ require('./tasks/script')('scripts', {
 
 require('./tasks/styleguide')('styleguide', {
 
-
-  templateEngine: {
-    name: 'pug',
-    options: {
-      url: 'https://localhost:9999'
-    }
-  },
   server: {
     open: false,
     https: {
