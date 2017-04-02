@@ -1,0 +1,152 @@
+input
+textarea
+select
+  font-family inherit
+  padding 0.5em 0.65em
+  line-height 1.25em
+  font-size 0.875em
+  border $border-width-default $border-type-default transparent
+  border-radius $border-radius-default
+  background $rgba-black-5
+  box-shadow none !important
+  &:focus
+    outline none!important
+
+input[type=text]
+input[type=password]
+input[type=search]
+input[type=number]
+input[type=time]
+input[type=date]
+input[type=datetime]
+input[type=datetime-local]
+input[type=month]
+input[type=week]
+input[type=email]
+input[type=url]
+input[type=tel]
+input[type=color]
+input[list]
+textarea
+select
+  appearance none
+  width 100%
+  min-height 2.5em
+  $color-input-default
+  transition all $timing-default $easing-default
+  position relative
+  font-weight 500
+  &:invalid
+  //border-color $colorWarning
+    outline none
+  &:focus
+    border $border-width-default $border-type-default $color-input-focus
+
+input[type=color]
+  height 3.5em
+
+select
+  text-transform none
+  cursor pointer
+  touch-callout none
+  user-select none
+  tap-highlight-color rgba(0,0,0,0)
+
+input[type=text]
+select
+  & ~ .svg.svg--search
+  & ~ .svg.svg--select-arrow-down
+    position absolute
+    z-index 1
+    width 1.125em
+    height @width
+    top 50%
+    transform translateY(-50%)
+
+  & ~ .svg.svg--search
+    left .75em
+  & ~ .svg.svg--select-arrow-down
+    right .8em
+    pointer-events none
+
+
+input[type=checkbox]
+input[type=radio]
+  margin-right .5em
+  vertical-align middle
+  height 1em
+
+//
+//input[type=checkbox]
+//input[type=radio]
+//  position absolute
+//  z-index -10
+//  opacity .0001
+//  & ~ .svg
+//    width 1.5em
+//    height @width
+//    cursor pointer
+//
+//input[type=checkbox]
+//  & ~ .svg.svg--checkbox-checked
+//    display none
+//  & ~ .svg.svg--checkbox-unchecked
+//    display inline-block
+//  &:checked
+//  &[checked=checked]
+//    & ~ .svg.svg--checkbox-checked
+//      display inline-block
+//    & ~ .svg.svg--checkbox-unchecked
+//      display none
+//
+//input[type=radio]
+//  & ~ .svg.svg--radiobutton-checked
+//    display none
+//  & ~ .svg.svg--radiobutton-unchecked
+//    display inline-block
+//  &:checked
+//  &[checked=checked]
+//    & ~ .svg.svg--radiobutton-checked
+//      display inline-block
+//    & ~ .svg.svg--radiobutton-unchecked
+//      display none
+
+::-ms-expand
+  display none
+
+::-webkit-input-placeholder
+  placeholder($color-input-placeholder)
+
+::-moz-placeholder
+  placeholder($color-input-placeholder)
+
+:-moz-placeholder
+  placeholder($color-input-placeholder)
+
+:-ms-input-placeholder
+  placeholder($color-input-placeholder)
+
+input:-ms-input-placeholder
+  placeholder($color-input-placeholder)
+
+::-moz-focus-inner
+  border 0
+
+select:-moz-focusring
+  color transparent
+  text-shadow 0 0 0 $color-text
+
+
+input[type=text]
+  &::-ms-reveal
+  &::-ms-clear
+    display none
+    width  0
+    height 0
+
+input[type=search]
+  &::-webkit-search-decoration
+  &::-webkit-search-cancel-button
+  &::-webkit-search-results-button
+  &::-webkit-search-results-decoration
+    display none

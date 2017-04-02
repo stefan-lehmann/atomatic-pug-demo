@@ -1,0 +1,29 @@
+table
+  width 100%
+  border-collapse separate
+  border-spacing 0
+  border-horizontal-spacing 0
+  border-vertical-spacing 0
+  padding-bottom $padding-small
+
+  th
+  td
+  caption
+    text-align left
+    vertical-align top
+    padding $padding-small
+    position relative
+    line-height 1.3em
+
+    @media $media-min-laptop-start
+      padding $padding-normal
+
+  td
+    border-top $border-bright
+
+  th
+    font-weight 500
+    padding-bottom ($padding-small/2)
+
+  caption
+    color $color-text-secondary

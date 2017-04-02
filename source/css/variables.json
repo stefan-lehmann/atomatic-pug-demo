@@ -3,7 +3,7 @@
     "white": "#ffffff",
     "black": "#000000",
     "wildSand": "#f5f5f5",
-    "mercury": "#e6e6e6",
+    "mercury": "#e5e5e5",
     "silver": "#c1c1c1",
     "boulder": "#7d7d7d",
     "orange": "#ff3300",
@@ -14,6 +14,9 @@
     "internatOrange": "#ff5500",
     "achoolbusyellow": "#ffdb00",
     "malibu": "#80caff"
+  },
+  "$rgba": {
+    "black-5": "rgba($hex-black,.05)"
   },
   "$color": {
     "primary": "$hex-thunderbird",
@@ -36,6 +39,14 @@
       "default": "$color-text-default",
       "invert": "$color-text-invert",
       "background": "transparent"
+    },
+    "input": {
+      "default": "$color-text-default",
+      "focus": "$color-text-primary",
+      "disabled": "$color-text-inactive",
+      "readonly": "$color-input-default",
+      "placeholder": "$color-text-default",
+      "invalid": "$color-warning"
     },
     "buttons": {
       "default": "transparent"
@@ -71,10 +82,11 @@
     },
     "color": {
       "default": "$hex-silver",
-      "bright": "$hex-wildSand",
+      "bright": "$hex-mercury",
       "button": "$color-text-default"
     },
     "default": "$border-width-default $border-type-default $border-color-default",
+    "bright": "$border-width-default $border-type-default $border-color-bright",
     "button": "$border-width-button $border-type-button $border-color-button"
   },
   "$shadow": {
@@ -94,6 +106,9 @@
     "long": "500ms",
     "xlong": "1000ms",
     "forever": "5000ms"
+  },
+  "$easing": {
+    "default": "ease-in-out"
   },
   "$layout": {
     "max-width": "1100px",

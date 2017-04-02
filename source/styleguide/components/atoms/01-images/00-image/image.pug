@@ -1,0 +1,7 @@
+if image
+  - var modifierClass = modifierClass ? ' '+modifierClass : ''
+  - var className = className ? className : 'image'
+  img(
+  src= image.src,
+  alt= image.alt,
+  class= className + modifierClass)

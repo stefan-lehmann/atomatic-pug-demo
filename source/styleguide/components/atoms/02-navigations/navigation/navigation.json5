@@ -1,0 +1,35 @@
+{
+  "title": "Navigation",
+  "schema": {
+    "title": {
+      "type": "string"
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "href": {
+            "type": "string",
+            "faker": "linkUrl"
+          }
+        },
+        "required": [
+          "name",
+          "title",
+          "href"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 8,
+      "uniqueItems": true
+    }
+  }
+}

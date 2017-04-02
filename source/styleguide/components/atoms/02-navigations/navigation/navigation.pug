@@ -1,0 +1,18 @@
+if links
+
+  - var modifierClass = modifierClass ? ' '+ modifierClass : ''
+  - var className = className ? className : 'navigation'
+
+  nav(class= className,
+      aria-label= title,
+      role="navigation")
+    ul(class= className+ '__list')
+      each link in links
+        - var itemClassName = className + '__item'
+        - itemClassName += link.name ? ' ' + itemClassName + '--' + link.name.split(' ').join('-').toLowerCase() : ''
+
+        li(class= itemClassName)
+          - var linkClassName = className + '__link'
+          a(class= linkClassName,
+          href= link.href,
+          title= link.title) #{link.title}

@@ -1,0 +1,23 @@
+{
+  "title": "Image",
+  "schema": {
+    "image": {
+      "type": "object",
+      "required": [
+        "src"
+      ],
+      "properties": {
+        "src": {
+          "type": "string",
+          "faker":  {
+            "imageUrl": [600, 400]
+          }
+        },
+        "alt": {
+          "type": "string",
+          "minLength": 30
+        }
+      }
+    }
+  }
+}

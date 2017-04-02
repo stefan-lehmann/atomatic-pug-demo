@@ -1,0 +1,23 @@
+{
+  "title": "Avatar",
+  "schema": {
+    "image": {
+      "type": "object",
+      "required": [
+        "src"
+      ],
+      "properties": {
+        "src": {
+          "type": "string",
+          "faker":  {
+            "imageUrl": [120, 120]
+          }
+        },
+        "alt": {
+          "type": "string",
+          "minLength": 30
+        }
+      }
+    }
+  }
+}
