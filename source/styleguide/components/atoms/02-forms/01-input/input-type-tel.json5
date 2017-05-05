@@ -1,0 +1,11 @@
+{
+  "title": "Input Type Tel",
+  "orderValue": "04",
+  "schema": {
+    "allOf": [
+      {
+        "$ref": "atoms-forms-input"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Headline Group",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "primary": {
+        "type": "string",
+        "faker": "lorem.words"
+      },
+      "secondary": {
+        "type": "string",
+        "faker": "lorem.sentence"
+      }
+    },
+    "required": [
+      "primary",
+      "secondary"
+    ]
+  }
+}

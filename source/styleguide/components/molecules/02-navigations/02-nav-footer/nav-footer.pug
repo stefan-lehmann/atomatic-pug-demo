@@ -1,0 +1,6 @@
+.nav-footer
+  each navItem in footerNav.items
+    .nav-footer__nav
+      .nav-footer__title= navItem.name
+      each subNavItem in navItem.items
+        a.nav-footer__link(href="#")= subNavItem.name

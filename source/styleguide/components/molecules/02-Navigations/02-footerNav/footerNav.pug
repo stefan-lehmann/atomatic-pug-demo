@@ -1,8 +1,0 @@
-.footerNav
-  each navItem in footerNav.items
-    .footerNav__nav
-      .footerNav__title= navItem.name
-      each subNavItem in navItem.items
-        a.footerNav__nav-link(href="#")= subNavItem.name
-
-include molecules-navigations-primaryNav

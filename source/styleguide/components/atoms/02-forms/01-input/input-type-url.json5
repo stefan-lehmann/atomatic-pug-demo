@@ -1,0 +1,11 @@
+{
+  "title": "Input Type Url",
+  "orderValue": "05",
+  "schema": {
+    "allOf": [
+      {
+        "$ref": "atoms-forms-input"
+      }
+    ]
+  }
+}

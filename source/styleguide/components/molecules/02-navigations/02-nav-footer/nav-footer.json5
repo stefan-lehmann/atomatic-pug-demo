@@ -1,0 +1,35 @@
+{
+  "title": "Footer Nav",
+  "schema": {
+    "id": "nav-footer",
+    "footerNav": {
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "properties": {
+        "items": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "items"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "faker": "random.words"
+              },
+              "items": {
+                "$ref": "molecules-navigations-nav-primary/primary-nav/items"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

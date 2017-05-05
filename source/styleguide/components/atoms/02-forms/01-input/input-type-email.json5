@@ -1,0 +1,11 @@
+{
+  "title": "Input Type Email",
+  "orderValue": "02",
+  "schema": {
+    "allOf": [
+      {
+        "$ref": "atoms-forms-input"
+      }
+    ]
+  }
+}

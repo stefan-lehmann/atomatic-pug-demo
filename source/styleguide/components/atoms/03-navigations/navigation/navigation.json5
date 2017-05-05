@@ -1,0 +1,44 @@
+{
+  "title": "Navigation",
+  "schema": {
+    "id": "navigation",
+    "type": "object",
+    "required": [
+      "title",
+      "items"
+    ],
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "items": {
+        "id": "items",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string",
+              "faker": "lorem.words"
+            },
+            "href": {
+              "type": "string",
+              "faker": "linkUrl"
+            }
+          },
+          "required": [
+            "name",
+            "title",
+            "href"
+          ]
+        },
+        "minItems": 4,
+        "maxItems": 8,
+        "uniqueItems": true
+      }
+    }
+  }
+}

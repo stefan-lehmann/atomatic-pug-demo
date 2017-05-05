@@ -1,0 +1,53 @@
+if (type == 'spacer')
+  .field= field.text
+else if (field)
+  .field
+    label.field__inner(title= field.label || field.placeholder || "")
+      if (field.label)
+        .field__label= field.label
+
+      if (field.message)
+        .field__message= field.message
+
+      if (field.error)
+        .field__message.field__message--error= field.error
+
+      if (field.warning)
+        .field__message.field__message--warning= field.warning
+
+
+      .field__input
+        - const {type, name, value, placeholder, className, checked, select, autocomplete, autofocus, options, required, pattern} = field;
+
+        if (type == 'text')
+          include atoms-forms-input
+
+        if (type == 'search')
+          include atoms-forms-input-type-search
+
+        if (type == 'password')
+          include atoms-forms-input-type-password
+
+        if (type == 'tel')
+          include atoms-forms-input-type-tel
+
+        if (type == 'url')
+          include atoms-forms-input-type-url
+
+        if (type == 'email')
+          include atoms-forms-input-type-email
+
+        //if (type == 'checkbox')
+        //  include atoms-forms-checkbox
+        //
+        //if (type == 'radio')
+        //  include atoms-forms-radio
+        //
+        //if (type == 'textarea')
+        //  include atoms-forms-textarea
+        //
+        //if (type == 'select')
+        //  include atoms-forms-select
+
+      if (field.text)
+        .field__text= field.text

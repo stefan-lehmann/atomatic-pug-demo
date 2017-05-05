@@ -1,0 +1,20 @@
+{
+  "title": "Checklist",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "checklist": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "faker": "lorem.lines"
+        },
+        "minItems": 4,
+        "maxItems": 8
+      }
+    },
+    "required": [
+      "checklist"
+    ]
+  }
+}

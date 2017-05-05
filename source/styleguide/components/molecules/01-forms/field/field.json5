@@ -1,0 +1,60 @@
+{
+  "title": "Field",
+  "orderValue": "00",
+  "schema": {
+    "type": "object",
+    "required": [
+      "field"
+    ],
+    "properties": {
+      "field": {
+        "type": "object",
+        "required": [
+          "type",
+          "label",
+          "text",
+          "message",
+          "error",
+          "warning"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "text"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 30
+          },
+          "palceholder": {
+            "type": "string",
+            "faker": "lorem.words"
+          },
+          "text": {
+            "type": "string",
+            "faker": "lorem.words"
+          },
+          "message": {
+            "type": "string",
+            "faker": "lorem.sentence"
+          },
+          "error": {
+            "type": "string",
+            "faker": "lorem.sentence"
+          },
+          "warning": {
+            "type": "string",
+            "faker": "lorem.sentence"
+          },
+          "toolTip": {
+            "type": "string",
+            "faker": "lorem.paragraph"
+          }
+        }
+      }
+    }
+  }
+}

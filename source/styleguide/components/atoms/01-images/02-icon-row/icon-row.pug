@@ -1,0 +1,14 @@
+if icons
+  .icon-row(class= modifierClassName ? `icon-row--${modifierClassName}` : '')
+    .icon-row__inner
+      each item in icons
+        .icon-row__item
+          if item.href
+            a.icon-row__link(href=item.href,
+            title=item.title || item.name)
+            include `svg-${item.name}`
+          else
+            include 'svg-'+item.name
+
+
+

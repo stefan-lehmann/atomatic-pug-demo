@@ -1,0 +1,35 @@
+.icon-row
+  display inline-block
+  vertical-align middle
+  font-size 1.2em
+  line-height 1em
+  &&--justified
+    width 100%
+
+  &__inner
+    display flex
+    flex-flow row
+    align-items center
+    transform translateY(-0.1em)
+
+    .icon-row--space-around &
+      justify-content space-around
+
+    .icon-row--space-between &
+      justify-content space-between
+
+  &__item
+    margin 0 .25em
+    .svg
+      width 1em
+      height @width
+
+  &__link
+    display block
+    padding .25em .60em
+    margin-top -.25em
+    margin-bottom @margin-top
+    .icon-row__item:first-child &
+      margin-left -.85em
+    .icon-row__item:last-child &
+      margin-right -.85em

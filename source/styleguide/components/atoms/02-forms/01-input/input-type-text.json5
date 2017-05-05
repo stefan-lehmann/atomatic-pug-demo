@@ -1,0 +1,11 @@
+{
+  "title": "Input Type Text",
+  "orderValue": "01",
+  "schema": {
+    "allOf": [
+      {
+        "$ref": "atoms-forms-input"
+      }
+    ]
+  }
+}

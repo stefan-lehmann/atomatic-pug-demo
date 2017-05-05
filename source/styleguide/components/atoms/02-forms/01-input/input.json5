@@ -1,0 +1,36 @@
+{
+  "title": "Input",
+  "orderValue": "00",
+  "schema": {
+    "type": "object",
+    "required": [
+      "type",
+      "label",
+      "palceholder",
+      "text",
+      "name",
+      "value"
+    ],
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 10,
+        "maxLength": 30
+      },
+      "placeholder": {
+        "type": "string",
+        "faker": "lorem.words"
+      },
+      "text": {
+        "type": "string",
+        "faker": "lorem.words"
+      },
+      "name": {
+        "type": "string"
+      },
+      "value": {
+        "type": "string"
+      }
+    }
+  }
+}

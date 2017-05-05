@@ -1,0 +1,10 @@
+{
+  "title": "Field Type Text",
+  "schema": {
+    "allOf": [
+      {
+        "$ref": "molecules-forms-field"
+      }
+    ]
+  }
+}

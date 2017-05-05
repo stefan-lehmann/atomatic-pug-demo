@@ -1,0 +1,51 @@
+{
+  "title": "Icon Row",
+  "modifierClassNames": [
+    "space-around",
+    "space-between"
+  ],
+  "schema": {
+    "type": "object",
+    "properties": {
+      "icons": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "faker": "lorem.words"
+            },
+            "name": {
+              "type": "string",
+              "faker": {
+                "use": [[
+                    "facebook",
+                    "twitter",
+                    "rss",
+                    "instagram",
+                    "google-plus"
+                  ],[0]
+                ]
+              }
+            },
+            "href": {
+              "type": "string",
+              "faker": "linkUrl"
+            }
+          },
+          "required": [
+            "name",
+            "href"
+          ]
+        },
+        "minItems": 5,
+        "maxItems": 5,
+        "uniqueItems": true
+      }
+    },
+    "required": [
+      "icons"
+    ]
+  }
+}

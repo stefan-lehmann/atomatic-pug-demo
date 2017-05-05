@@ -1,0 +1,12 @@
+- const attr = {type: type || 'text', tabindex: tabindex || 0}
+- if (required !== undefined)      attr.required     = required
+- if (placeholder !== undefined)   attr.placeholder  = placeholder
+- if (name !== undefined)          attr.name         = name
+- if (value !== undefined)         attr.value         = value
+- if (minlength !== undefined)     attr.minlength    = minlength
+- if (maxlength !== undefined)     attr.maxlength    = maxlength
+- if (autofocus !== undefined)     attr.autofocus    = autofocus
+- if (autocomplete !== undefined)  attr.autocomplete = autocomplete
+- if (type === 'email')            attr.pattern      = pattern || "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+
+input(autocapitalize="off" autocorrect="off")&attributes(attr)

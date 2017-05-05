@@ -7,12 +7,12 @@ if links
       aria-label= title,
       role="navigation")
     ul(class= className+ '__list')
-      each link in links
+      each item in items
         - var itemClassName = className + '__item'
-        - itemClassName += link.name ? ' ' + itemClassName + '--' + link.name.split(' ').join('-').toLowerCase() : ''
+        - itemClassName += item.name ? ' ' + itemClassName + '--' + item.name.split(' ').join('-').toLowerCase() : ''
 
         li(class= itemClassName)
           - var linkClassName = className + '__link'
           a(class= linkClassName,
-          href= link.href,
-          title= link.title) #{link.title}
+          href= item.href,
+          title= item.title)= item.title

@@ -1,0 +1,68 @@
+.field
+  width 100%
+  margin-bottom .75em
+  flex-shrink 0
+
+  &:last-child
+    margin-bottom 0
+
+  &&--checkbox
+  &&--radio
+    .field__inner
+      display flex
+      text-align left
+      flex-flow row wrap
+      & .field__input
+      & .field__text
+        pointer-events none
+      & .field__text
+        flex-basis calc(100% \- 40px)
+        flex-shrink 2
+  &&--checkbox
+    .field__inner
+      font-size .75em
+
+  &&--select
+      padding-bottom 1em
+
+  &&--invalid
+    select
+    input
+      border-color $colorAlert
+    .svg
+      tintSvg($colorAlert)
+
+  &__inner
+      cursor pointer
+
+  &__label
+    display none
+
+  &__input
+    position relative
+
+    &&--search
+      input
+        padding-left 3em
+
+    &&--checkbox
+    &&--radio
+      padding-right 2em
+      width 2em
+      vertical-align middle
+
+  &__message
+    width 100%
+    flex-basis 100%
+    padding-bottom .5em
+
+    &&--error
+      display none
+      color $colorAlert
+      fontPrimaryBold(.9em)
+
+      .field--invalid &
+        display block
+
+  &__label
+    padding-bottom .5em

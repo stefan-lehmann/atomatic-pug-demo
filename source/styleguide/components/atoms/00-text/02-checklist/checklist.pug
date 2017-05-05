@@ -1,0 +1,7 @@
+if checklist
+  ul.checklist(class= modifierClassName || "")
+    each item in checklist
+      li.checklist__item
+        span.checklist__icon
+          include svg-checkmark
+        = item

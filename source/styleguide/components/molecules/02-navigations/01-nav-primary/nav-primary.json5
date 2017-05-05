@@ -9,12 +9,14 @@
       }
     },
     "primaryNav": {
+      "id": "nav-primary",
       "type": "object",
       "required": [
         "items"
       ],
       "properties": {
         "items": {
+          "id": "items",
           "type": "array",
           "minItems": 4,
           "maxItems": 5,
@@ -25,7 +27,8 @@
             ],
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "random.word"
               }
             }
           }
